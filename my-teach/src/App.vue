@@ -17,11 +17,12 @@
             </router-link>
             <router-link  to="/Me">
                 <div><img slot="icon" src=".././static/img/我.png"></div>
-                我
+                  我
               </router-link>
           </div>
       </div>
     </div>
+
 </template>
 
 
