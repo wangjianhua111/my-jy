@@ -4,7 +4,6 @@ import Vue from 'vue'
 import App from './App'
 import VueRouter from 'vue-router'
 
-
 Vue.use(VueRouter)
 Vue.config.productionTip = false
 
@@ -37,13 +36,3 @@ new Vue({
      render: h => h(App)
  });
 
-
-//  下面的是导航部分  只有2个名字。 一个hello 一个new.
-// new Vue({
-//   router,
-//   template: `
-//     <div id="app">
-//         <router-view></router-view>
-//     </div>
-//   `
-// }).$mount("#app")
