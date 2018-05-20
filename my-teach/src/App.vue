@@ -38,49 +38,49 @@ export default {
 };
 </script>
 <style>
-    #app{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-      }
-      .nav{
-        height: 50px;
-        width: 100%;
-        background-color:#fff;
-      }
+#app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+}
 
-      .nav-item {
-          height: 50px;
-         
-      }
-      .nav-item img{
-         width: 25%;
-         height: 25px;
-      }
+.nav-item {
+  height: 50px;
+}
+.nav-item img {
+  width: 25%;
+  height: 25px;
+}
 
-      .nav-item a{
-        flex: 1;
-        width: 25%;
-        float: left;
-        height: 30px;
-        font-size: 1px;
-        color: black;
-        line-height: 15px;
-        text-align: center;
-        text-decoration: none;
-        box-sizing: border-box;
-        padding: 0.35rem 0.3rem;
-      }
+.nav-item a {
+  flex: 1;
+  width: 25%;
+  float: left;
+  height: 30px;
+  font-size: 1px;
+  color: black;
+  line-height: 15px;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 0.35rem 0.3rem;
+}
 
-      .nav-item:link,.nav-item:visited{
-        background-color: #fff;
-        color: black;
-      }
+.nav-item:link,
+.nav-item:visited {
+  background-color: #fff;
+  color: black;
+}
 
-      .nav-item:hover,.nav-item:active{
-        color: #ff7125;
-        background-color: #fff;
-      }
-
+.nav-item:hover,
+.nav-item:active {
+  color: #ff7125;
+  background-color: #fff;
+}
 </style>

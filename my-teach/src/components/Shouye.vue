@@ -2,13 +2,13 @@
   <div class="shouye slide">  
       <!-- 轮播图部分 -->
         <div class="slideshow">  
-        <transition-group tag="ul" name="image">  
-            <li v-for="(img, index) in imgArray" v-show="index===mark" :key="index">  
-            <a href="#">  
-                <img :src='img'>  
-            </a>  
-            </li>  
-        </transition-group>  
+           <transition-group tag="ul" name="image">  
+              <li v-for="(img, index) in imgArray" v-show="index===mark" :key="index">  
+               <a href="#">  
+                 <img :src='img'>  
+                </a>  
+             </li>  
+           </transition-group>  
         </div>  
 
         <div class="icon-box">
@@ -30,11 +30,13 @@
         </div>
 
     <div class="mian">  
+      
         <div class="hd">  
             <span v-bind:class="{cur:lanmu=='xinwen'} " v-on:click="change('xinwen')">重要通知</span>  
             <span v-bind:class="{cur:lanmu=='tupian'} " v-on:click="change('tupian')">校园资讯</span>  
             <span v-bind:class="{cur:lanmu=='junshi'} " v-on:click="change('junshi')">班级课程表</span>  
         </div>  
+
         <div class="bd">  
             <div class="xinwen" v-if="lanmu=='xinwen'">   
 
@@ -87,7 +89,6 @@ export default {
     };
   },
   methods: {
-
     autoPlay() {
       this.mark++;
       if (this.mark === 4) {
@@ -106,55 +107,6 @@ export default {
     selectMapNav(title) {
       this.isSelect = title;
     },
-    goindex() {
-        console.log("haha")
-         this.$router.push(
-        {
-          path: '/Shouye',
-          query: {
-          }
-        }
-      );
-    },
-    goadress(){
-      this.$router.push(
-        {
-          path: '/Tongxun',
-          query: {
-            cmpCode: this.cmpCode
-          }
-        }
-      );
-    },
-    godiscover() {
-      this.$router.push(
-        {
-          path: '/emitLocal',
-          query: {
-            cmpCode: this.cmpCode
-          }
-        }
-      );
-    },
-    gome() {
-      this.mydbname = this.$route.query.lineDBname
-    //   console.log('denglu')
-      //data.redirectURL 在跳转
-
-      //补充这个变量
-      console.log(this.self.GetCookie('username'))
-
-      this.$router.push(
-        {
-          path: '/mancenter',
-          query: {
-  
-            cmpCode: this.cmpCode,
-   
-          }
-        }
-      );
-    }
 
   },
   created() {
